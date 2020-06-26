@@ -224,7 +224,7 @@ def display_data(df):
 
         
     
-def main():
+def main(): #main() will run the entire programme, display the results from the various functions, and will ask the user if they wish to continue or re-start at any point.
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
