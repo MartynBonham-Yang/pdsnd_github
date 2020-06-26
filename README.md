@@ -1,8 +1,8 @@
 ### Date created
-Include the date you created this project and README file.
+This README file was present in the repository I copied from GitHub. I forked it 2020-06-26.
 
 ### Project Title
-Replace the Project Title
+GitHub Udacity Course - Git Project
 
 ### Description
 Describe what your project is about and what it does
