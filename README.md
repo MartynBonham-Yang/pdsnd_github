@@ -8,8 +8,7 @@ GitHub Udacity Course - Git Project
 This project is about learning how to use GitHub and how to push my files and work to an online repository. This project includes a python file as well as this README file.
 
 ### Files used
-Include the files used
+I used the file bikeshare.py, which I created as part of my Udacity course.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+The original repo which I forked was at https://github.com/udacity/pdsnd_github. Throughout the course of this project I used the Udacity resources from Udacity.com as well as GitHub's help pages at help.github.com/en for various questions. 
