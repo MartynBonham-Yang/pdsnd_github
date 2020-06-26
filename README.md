@@ -5,7 +5,7 @@ This README file was present in the repository I copied from GitHub. I forked it
 GitHub Udacity Course - Git Project
 
 ### Description
-Describe what your project is about and what it does
+This project is about learning how to use GitHub and how to push my files and work to an online repository. This project includes a python file as well as this README file.
 
 ### Files used
 Include the files used
