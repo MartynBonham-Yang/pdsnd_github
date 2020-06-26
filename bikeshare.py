@@ -22,7 +22,7 @@ def get_filters(): #This function will allow us to filter our dataframes for ana
     while True: 
         city = input('Please choose a city. Valid options are "chicago", "new york", or "washington".').lower()
         if city not in cities_set:
-            print('Sorry, your selection is invalid. Please try again. \n')
+            print('Sorry, your selection is invalid. Please make another selection from the valid options "chicago", "new york", or "washington". \n')
             continue
         else:
             print('You chose ' + str(city) + '. \n')
@@ -38,7 +38,7 @@ def get_filters(): #This function will allow us to filter our dataframes for ana
                 print('Okay, considering all months. \n')
                 break
             elif month != 'all':
-                print('Sorry, your selection is invalid. Please try again. \n')
+                print('Sorry, your selection is invalid. Please make another selection from the valid months from January to June inclusive, or "all" to consider all months.. \n')
                 continue
         else:
             print('You chose ' + str(month) + '. \n')
@@ -52,7 +52,7 @@ def get_filters(): #This function will allow us to filter our dataframes for ana
                 print('Okay, considering all days. \n')
                 break
             elif day != 'all':
-                print('Sorry, your selection is invalid. Please try again. \n')
+                print('Sorry, your selection is invalid. Please try again, select a day of interest, or "all" to consider all days. \n')
                 continue
         else:
             print('You chose ' + str(day) + '. \n')
@@ -139,7 +139,7 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
     df['Combined start-end'] = df[['Start Station', 'End Station']].apply(lambda x: '#'.join(x), axis=1) #We use a lambda function because the more 'simple' method did not seem to work. We use # because this symbol doesn't appear in any of the cells so it makes splitting easy. 
     most_common_SE_pair_joined = df['Combined start-end'].mode()
-    most_common_SE_pair = most_common_SE_pair_joined[0].split('#')
+    most_common_SE_pair = most_common_SE_pair_joined[0].split('#') 
     print('The most frequent combination of start station and end station was starting at ' + most_common_SE_pair[0] + ' and ending at ' + most_common_SE_pair[1] + '\n')
 
 
@@ -224,7 +224,7 @@ def display_data(df):
 
         
     
-def main():
+def main(): #main() will run the entire programme, display the results from the various functions, and will ask the user if they wish to continue or re-start at any point.
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
